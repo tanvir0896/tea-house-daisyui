@@ -11,6 +11,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/c4b987600f.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
@@ -18,6 +32,36 @@
     </style>
 </head>
 <body class="font-manrope">
-    
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-5xl font-bold">
+              It's good <br>
+              tea time at The <br>
+               Tea House</h1>
+            <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+            <button class="bg-red-900 w-28 h-12 rounded-lg">Explore More</button>
+          </div>
+          <div>
+            <img src="/images/banner.png" class="max-w-sm" />
+            <!-- ratings badge  -->
+            <div class="-mt-14 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-52">
+              <i class="fa-solid fa-star text-4xl" style="color: #ede607;"></i>
+              <div>
+                  <h3 class="text-3xl text-black font-bold">5.00</h3>
+                  <p class="text-gray-800 text-xs">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
